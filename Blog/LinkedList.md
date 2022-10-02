@@ -89,7 +89,7 @@ int main(void){
 
 ## 직접 만들기
 
-헤더 파일을 만들고, 함수를 작성해서 인접리스트 코딩하기.
+헤더 파일을 만들고, 함수를 작성해서 인접리스트 코딩하기. 헤더 파일은 [이곳](https://replit.com/@yejiya7/LinkedList2#DLinkedList.h)에서.
 
 ~~~c
 #include <stdio.h>
@@ -146,5 +146,3 @@ int main(void) {
   return 0;
 }
 ~~~
-
-헤더 파일은 [이곳](https://replit.com/@yejiya7/LinkedList2#DLinkedList.h)에서.
