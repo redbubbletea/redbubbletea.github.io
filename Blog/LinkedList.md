@@ -9,6 +9,7 @@ sort: 1
 ## 기초
    
 자연수를 입력 받고, 인접리스트 방식으로 넣고 출력하고 빼기.   
+
 ~~~c
 #include<stdio.h>
 #include<stdlib.h>
@@ -85,3 +86,65 @@ int main(void){
 }
 ~~~
 
+
+## 직접 만들기
+
+헤더 파일을 만들고, 함수를 작성해서 인접리스트 코딩하기.
+
+~~~c
+#include <stdio.h>
+#include <stdlib.h>
+#include "DLinkedList.h"
+
+int WhoIsPrecede(int d1, int d2){
+  if(d1 < d2)
+    return 0;
+  else
+    return 1;
+}
+
+int main(void) {
+  List list;
+  int data;
+  ListInit(&list);
+  SetSortRule(&list, WhoIsPrecede);
+
+  LInsert(&list, 11);
+  LInsert(&list, 11);
+  LInsert(&list, 22);
+  LInsert(&list, 22);
+  LInsert(&list, 33);
+
+  printf("current data num : %d\n", LCount(&list));
+
+  if (LFirst(&list, &data)) {
+    printf("current data : %d\n", data);
+
+    while (LNext(&list, &data)) {
+      printf("current data : %d\n", data);
+    }
+  }
+
+  if (LFirst(&list, &data)) {
+    if(data == 22) LRemove(&list);
+    while (LNext(&list, &data)) {
+      if(data == 22)
+        LRemove(&list);
+    }
+  }
+
+  printf("\n");
+
+  if (LFirst(&list, &data)) {
+    LRemove(&list);
+    while (LNext(&list, &data)) {
+      LRemove(&list);
+    }
+  }
+
+  printf("current data num : %d\n", LCount(&list));
+  return 0;
+}
+~~~
+
+헤더 파일은 [이곳](https://replit.com/@yejiya7/LinkedList2#DLinkedList.h)에서.
