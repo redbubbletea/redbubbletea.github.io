@@ -6,7 +6,7 @@ sort: 1
 
 22.10.16 - 틀 제작
 
-[Chat 링크](https://redbubbletea.github.io/chat/chat.html)
+(https://redbubbletea.github.io/chat/chat.html) 이미지에 링크시키기
 
 
    
