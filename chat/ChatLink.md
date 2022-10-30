@@ -6,7 +6,7 @@ sort: 1
 
 22.10.16 - 틀 제작
 
-[링크](https://redbubbletea.github.io/chat/chat.html)
+[링크](https://chat-server.yejiya7.repl.co/)
 
 
    
