@@ -2,8 +2,6 @@
 
 C, C++, Python, Arduino, HTML? 
 
-기억도 안나기는 한데 여튼
-
 ## What it does?
 
 This theme is inspired by [sphinx-rtd-theme](https://github.com/readthedocs/sphinx_rtd_theme) and refactored with:
